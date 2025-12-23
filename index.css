@@ -463,3 +463,136 @@ a:hover {
 .mt-xl {
   margin-top: var(--spacing-xl);
 }
+
+/* ========================================
+   WELCOME POPUP STYLES
+   ======================================== */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-base);
+}
+
+.popup-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-container {
+  transform: scale(0.9);
+  transition: transform var(--transition-base);
+}
+
+.popup-overlay.show .popup-container {
+  transform: scale(1);
+}
+
+.popup-content {
+  background: var(--color-bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  max-width: 500px;
+  width: 90%;
+  box-shadow: var(--shadow-xl), var(--shadow-glow);
+  position: relative;
+}
+
+.popup-header {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.popup-title {
+  font-size: var(--text-3xl);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.popup-text {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.popup-text strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.popup-signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-md);
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-accent-primary);
+}
+
+.signature-name {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.signature-role {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+}
+
+.popup-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.popup-btn-primary,
+.popup-btn-secondary {
+  min-width: 180px;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .popup-content {
+    padding: var(--spacing-lg);
+  }
+
+  .popup-title {
+    font-size: var(--text-2xl);
+  }
+
+  .popup-text {
+    font-size: var(--text-base);
+  }
+
+  .popup-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .popup-btn-primary,
+  .popup-btn-secondary {
+    width: 100%;
+  }
+}

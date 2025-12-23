@@ -27,6 +27,36 @@
 
 <body>
 
+  <!-- Welcome Popup -->
+  <div id="welcomePopup" class="popup-overlay">
+    <div class="popup-container">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h2 class="popup-title gradient-text">Bem-vindo ao meu portfólio</h2>
+        </div>
+
+        <p class="popup-text">
+          Aqui você vai conhecer projetos reais, ideias em produção e produtos digitais criados com foco em
+          <strong>impacto, inovação e experiência</strong>.
+        </p>
+
+        <div class="popup-signature">
+          <span class="signature-name">Marco Souza</span>
+          <span class="signature-role">Founder da Axis Software</span>
+        </div>
+
+        <div class="popup-actions">
+          <a href="#projects" class="btn btn-primary popup-btn-primary" id="exploreBtn">
+            Explorar projetos
+          </a>
+          <button class="btn btn-secondary popup-btn-secondary" id="closePopupBtn">
+            Entrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Hero Section -->
   <section id="hero" class="section"
     style="min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
@@ -456,7 +486,6 @@
     </div>
   </section>
 
-  <!-- JavaScript - Embedded Inline -->
   <script>
     // ========================================
     // MARCO SOUZA PORTFOLIO - INTERACTIONS
@@ -467,9 +496,58 @@
       initSmoothScroll();
       initScrollReveal();
       initParallaxEffects();
+      initWelcomePopup();
 
       console.log('🚀 Portfolio loaded successfully!');
     });
+
+    // ========================================
+    // WELCOME POPUP
+    // ========================================
+    function initWelcomePopup() {
+      const popup = document.getElementById('welcomePopup');
+      const closeBtn = document.getElementById('closePopupBtn');
+      const exploreBtn = document.getElementById('exploreBtn');
+
+      // Check if popup was already shown in this session
+      const popupShown = sessionStorage.getItem('welcomePopupShown');
+
+      if (!popupShown) {
+        // Show popup after a brief delay
+        setTimeout(() => {
+          popup.classList.add('show');
+        }, 500);
+      }
+
+      // Close popup function
+      function closePopup() {
+        popup.classList.remove('show');
+        sessionStorage.setItem('welcomePopupShown', 'true');
+      }
+
+      // Close on button click
+      closeBtn.addEventListener('click', closePopup);
+
+      // Close and scroll to projects on explore button
+      exploreBtn.addEventListener('click', () => {
+        closePopup();
+      });
+
+      // Close on overlay click (click outside)
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+          closePopup();
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && popup.classList.contains('show')) {
+          closePopup();
+        }
+      });
+    }
+
 
     // ========================================
     // SMOOTH SCROLL NAVIGATION
