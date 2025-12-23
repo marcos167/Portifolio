@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Marco Souza | No-Code Developer & Product Builder</title>
+  <meta name="description"
+    content="Marco Souza - No-Code/Low-Code Developer, Product Builder e Fundador da Axis Software. Criando produtos digitais que unem tecnologia, impacto e propósito.">
+  <meta name="keywords" content="Marco Souza, No-Code Developer, Low-Code, Product Builder, Axis Software, Chefex">
+  <meta name="author" content="Marco Souza">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Marco Souza | No-Code Developer & Product Builder">
+  <meta property="og:description" content="Criando produtos digitais que unem tecnologia, impacto e propósito">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section"
+    style="min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+    <!-- Animated Background -->
+    <div style="position: absolute; inset: 0; opacity: 0.1; z-index: 0;">
+      <div class="grid-background"></div>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+      <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <div class="fade-in-up">
+          <h1 style="font-size: var(--text-6xl); margin-bottom: var(--spacing-md); line-height: 1.1;">
+            Criando produtos digitais que unem
+            <span class="gradient-text">tecnologia, impacto e propósito</span>
+          </h1>
+        </div>
+
+        <div class="fade-in-up" style="animation-delay: 0.2s;">
+          <p style="font-size: var(--text-xl); color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">
+            No-Code / Low-Code Developer • Product Builder • Founder da Axis Software
+          </p>
+        </div>
+
+        <div class="fade-in-up"
+          style="animation-delay: 0.4s; display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+          <a href="#projects" class="btn btn-primary">Ver projetos</a>
+          <a href="#contact" class="btn btn-secondary">Entrar em contato</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div
+      style="position: absolute; bottom: var(--spacing-xl); left: 50%; transform: translateX(-50%); animation: fadeIn 2s ease-in;">
+      <div
+        style="width: 24px; height: 40px; border: 2px solid var(--glass-border); border-radius: 12px; position: relative;">
+        <div
+          style="width: 4px; height: 8px; background: var(--color-accent-primary); border-radius: 2px; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); animation: scroll 2s infinite;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Sobre mim</h2>
+
+      <div
+        style="display: grid; grid-template-columns: 300px 1fr; gap: var(--spacing-xl); align-items: center; max-width: 1000px; margin: 0 auto;">
+        <!-- Futuristic Photo Frame -->
+        <div class="reveal" style="animation-delay: 0.1s; position: relative;">
+          <div style="position: relative; width: 280px; height: 280px;">
+            <!-- Hexagonal Frame with Gradient Border -->
+            <div style="
+              position: absolute;
+              inset: 0;
+              background: var(--color-accent-gradient);
+              clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+              padding: 3px;
+              animation: glow 3s ease-in-out infinite;
+            ">
+              <div style="
+                width: 100%;
+                height: 100%;
+                background: var(--color-bg-primary);
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+              ">
+                <img src="marco-photo.png" alt="Marco Souza" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                  " />
+              </div>
+            </div>
+
+            <!-- Corner Accents -->
+            <div
+              style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 40px; height: 4px; background: var(--color-accent-gradient); border-radius: 2px;">
+            </div>
+            <div
+              style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 40px; height: 4px; background: var(--color-accent-gradient); border-radius: 2px;">
+            </div>
+          </div>
+
+          <!-- Floating Badge -->
+          <div style="
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-accent-gradient);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: var(--text-sm);
+            font-weight: 600;
+            white-space: nowrap;
+            box-shadow: var(--shadow-glow);
+          ">
+            🚀 Founder • Axis Software
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="glass-card reveal" style="animation-delay: 0.2s;">
+          <p style="font-size: var(--text-lg); margin-bottom: var(--spacing-md);">
+            Sou <strong style="color: var(--color-text-primary);">Marco Souza</strong>, desenvolvedor especializado em
+            <strong style="color: var(--color-accent-primary);">No-Code e Low-Code</strong>, com foco em criar
+            aplicações reais do zero que resolvem problemas concretos.
+          </p>
+
+          <p style="font-size: var(--text-lg); margin-bottom: var(--spacing-md);">
+            Como fundador da <strong style="color: var(--color-text-primary);">Axis Software</strong>, combino visão de
+            produto, arquitetura técnica e estratégia de monetização para transformar ideias em soluções digitais
+            escaláveis.
+          </p>
+
+          <p style="font-size: var(--text-lg);">
+            Minha abordagem vai além do código: penso em experiência do usuário, modelo de negócio e impacto real. Cada
+            projeto é uma oportunidade de criar algo que faça diferença.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Project - Chefex -->
+  <section id="chefex" class="section"
+    style="background: linear-gradient(180deg, transparent 0%, var(--color-bg-secondary) 50%, transparent 100%);">
+    <div class="container">
+      <h2 class="section-title reveal text-center">Projeto em Destaque</h2>
+
+      <div class="reveal" style="animation-delay: 0.2s;">
+        <div class="glass-card gradient-border" style="padding: var(--spacing-xl); max-width: 1000px; margin: 0 auto;">
+          <!-- Project Header -->
+          <div style="text-align: center; margin-bottom: var(--spacing-xl);">
+            <div
+              style="display: inline-block; padding: var(--spacing-xs) var(--spacing-md); background: var(--color-accent-gradient); border-radius: var(--radius-sm); font-size: var(--text-sm); font-weight: 600; margin-bottom: var(--spacing-md);">
+              🚀 PROJETO PRINCIPAL
+            </div>
+            <h3 style="font-size: var(--text-5xl); margin-bottom: var(--spacing-sm);">Chefex</h3>
+            <p style="font-size: var(--text-xl); color: var(--color-text-secondary);">
+              Rede social de culinária com foco em comunidade e impacto social
+            </p>
+          </div>
+
+          <!-- Project Details Grid -->
+          <div class="grid grid-2" style="margin-bottom: var(--spacing-xl);">
+            <!-- Problem -->
+            <div
+              style="background: var(--color-bg-tertiary); padding: var(--spacing-lg); border-radius: var(--radius-md); border-left: 3px solid var(--color-accent-primary);">
+              <h4
+                style="color: var(--color-accent-primary); margin-bottom: var(--spacing-sm); font-size: var(--text-xl);">
+                🎯 Problema
+              </h4>
+              <p>
+                Falta de uma plataforma dedicada que conecte entusiastas da culinária, permitindo compartilhamento de
+                receitas, interação social e crescimento de comunidade.
+              </p>
+            </div>
+
+            <!-- Solution -->
+            <div
+              style="background: var(--color-bg-tertiary); padding: var(--spacing-lg); border-radius: var(--radius-md); border-left: 3px solid var(--color-accent-secondary);">
+              <h4
+                style="color: var(--color-accent-secondary); margin-bottom: var(--spacing-sm); font-size: var(--text-xl);">
+                💡 Solução
+              </h4>
+              <p>
+                App social completo com feed personalizado, sistema de seguidores, criação de conteúdo, e recursos de
+                engajamento. Arquitetura preparada para monetização futura.
+              </p>
+            </div>
+          </div>
+
+          <!-- Technologies -->
+          <div
+            style="background: var(--color-bg-tertiary); padding: var(--spacing-lg); border-radius: var(--radius-md); margin-bottom: var(--spacing-lg);">
+            <h4 style="margin-bottom: var(--spacing-md); font-size: var(--text-xl);">
+              🛠️ Tecnologias & Recursos
+            </h4>
+            <div class="grid grid-3">
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>PWA (Progressive Web App)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>Autenticação Google</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>Feed Social</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>Sistema de Seguidores</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>Upload de Imagens</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>Sistema de Moderação</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>Painel Admin</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>API RESTful</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <span style="color: var(--color-accent-primary);">✓</span>
+                <span>Monetização Planejada</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Status -->
+          <div
+            style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); padding: var(--spacing-lg); border-radius: var(--radius-md); margin-bottom: var(--spacing-xl); border: 1px solid rgba(99, 102, 241, 0.2);">
+            <h4 style="margin-bottom: var(--spacing-sm); font-size: var(--text-xl);">
+              📊 Status do Projeto
+            </h4>
+            <p style="margin-bottom: var(--spacing-sm);">
+              <strong style="color: var(--color-accent-primary);">Em Produção</strong> - Aplicação completa e funcional,
+              com usuários ativos e em constante evolução.
+            </p>
+            <p style="font-size: var(--text-sm); color: var(--color-text-tertiary);">
+              Próximos passos: Implementação de recursos de monetização e expansão da base de usuários.
+            </p>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+            <a href="https://github.com/marcos167" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Ver no GitHub
+            </a>
+            <a href="https://github.com/marcos167" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Ver Arquitetura
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Outros Projetos</h2>
+
+      <div class="grid grid-3">
+        <!-- Project Card Template -->
+        <div class="glass-card reveal" style="animation-delay: 0.1s;">
+          <div
+            style="width: 48px; height: 48px; background: var(--color-accent-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: var(--text-2xl); margin-bottom: var(--spacing-md);">
+            🎮
+          </div>
+          <h4 style="margin-bottom: var(--spacing-sm);">Popconvert</h4>
+          <p style="margin-bottom: var(--spacing-md); font-size: var(--text-sm);">
+            Sistema de pop-ups gamificados para conversão de leads com 10 mecânicas interativas diferentes.
+          </p>
+          <a href="https://github.com/marcos167" target="_blank" rel="noopener noreferrer"
+            style="color: var(--color-accent-primary); font-size: var(--text-sm); font-weight: 500;">
+            Ver no GitHub →
+          </a>
+        </div>
+
+        <div class="glass-card reveal" style="animation-delay: 0.2s;">
+          <div
+            style="width: 48px; height: 48px; background: var(--color-accent-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: var(--text-2xl); margin-bottom: var(--spacing-md);">
+            🏥
+          </div>
+          <h4 style="margin-bottom: var(--spacing-sm);">Plataforma Médica</h4>
+          <p style="margin-bottom: var(--spacing-md); font-size: var(--text-sm);">
+            Sistema completo de gestão médica com agendamentos, prontuários eletrônicos e telemedicina.
+          </p>
+          <a href="https://github.com/marcos167" target="_blank" rel="noopener noreferrer"
+            style="color: var(--color-accent-primary); font-size: var(--text-sm); font-weight: 500;">
+            Ver no GitHub →
+          </a>
+        </div>
+
+        <div class="glass-card reveal" style="animation-delay: 0.3s;">
+          <div
+            style="width: 48px; height: 48px; background: var(--color-accent-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: var(--text-2xl); margin-bottom: var(--spacing-md);">
+            🛍️
+          </div>
+          <h4 style="margin-bottom: var(--spacing-sm);">Show Super App</h4>
+          <p style="margin-bottom: var(--spacing-md); font-size: var(--text-sm);">
+            Super app integrando e-commerce, fintech, telecomunicações, logística e rede social.
+          </p>
+          <a href="https://github.com/marcos167" target="_blank" rel="noopener noreferrer"
+            style="color: var(--color-accent-primary); font-size: var(--text-sm); font-weight: 500;">
+            Ver no GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stack & Skills -->
+  <section id="skills" class="section"
+    style="background: linear-gradient(180deg, transparent 0%, var(--color-bg-secondary) 50%, transparent 100%);">
+    <div class="container">
+      <h2 class="section-title reveal text-center">Stack & Habilidades</h2>
+
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div class="grid grid-2">
+          <!-- Technical Skills -->
+          <div class="glass-card reveal" style="animation-delay: 0.1s;">
+            <h3 style="margin-bottom: var(--spacing-md); font-size: var(--text-2xl);">
+              💻 Técnicas
+            </h3>
+            <div style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-primary); font-size: var(--text-xl);">▹</span>
+                <span>No-Code / Low-Code Development</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-primary); font-size: var(--text-xl);">▹</span>
+                <span>Progressive Web Apps (PWA)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-primary); font-size: var(--text-xl);">▹</span>
+                <span>API Integration & Development</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-primary); font-size: var(--text-xl);">▹</span>
+                <span>Autenticação & Segurança</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-primary); font-size: var(--text-xl);">▹</span>
+                <span>Database Design & Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Skills -->
+          <div class="glass-card reveal" style="animation-delay: 0.2s;">
+            <h3 style="margin-bottom: var(--spacing-md); font-size: var(--text-2xl);">
+              🚀 Negócio
+            </h3>
+            <div style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-secondary); font-size: var(--text-xl);">▹</span>
+                <span>Visão de Produto</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-secondary); font-size: var(--text-xl);">▹</span>
+                <span>Estratégia de Monetização</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-secondary); font-size: var(--text-xl);">▹</span>
+                <span>Arquitetura de Sistemas</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-secondary); font-size: var(--text-xl);">▹</span>
+                <span>Painel Admin & Analytics</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span style="color: var(--color-accent-secondary); font-size: var(--text-xl);">▹</span>
+                <span>UX/UI Design Thinking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <h2 class="section-title reveal">Vamos conversar?</h2>
+
+        <div class="reveal" style="animation-delay: 0.2s;">
+          <p style="font-size: var(--text-xl); margin-bottom: var(--spacing-xl);">
+            Aberto a oportunidades, projetos e desafios reais.
+          </p>
+
+          <div
+            style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-xl);">
+            <a href="https://www.linkedin.com/in/marcodesouza/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary" style="min-width: 200px;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              LinkedIn
+            </a>
+
+            <a href="https://github.com/marcos167" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"
+              style="min-width: 200px;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+
+            <a href="https://www.instagram.com/ocramy_" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary" style="min-width: 200px;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+              Instagram
+            </a>
+          </div>
+
+          <p style="color: var(--color-text-tertiary); font-size: var(--text-sm);">
+            Marco Souza © 2025 • Axis Software
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript - Embedded Inline -->
+  <script>
+    // ========================================
+    // MARCO SOUZA PORTFOLIO - INTERACTIONS
+    // ========================================
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize all features
+      initSmoothScroll();
+      initScrollReveal();
+      initParallaxEffects();
+
+      console.log('🚀 Portfolio loaded successfully!');
+    });
+
+    // ========================================
+    // SMOOTH SCROLL NAVIGATION
+    // ========================================
+    function initSmoothScroll() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    }
+
+    // ========================================
+    // SCROLL REVEAL ANIMATIONS
+    // ========================================
+    function initScrollReveal() {
+      const revealElements = document.querySelectorAll('.reveal');
+
+      // Create Intersection Observer
+      const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, observerOptions);
+
+      // Observe all reveal elements
+      revealElements.forEach(element => {
+        observer.observe(element);
+      });
+    }
+
+    // ========================================
+    // PARALLAX EFFECTS
+    // ========================================
+    function initParallaxEffects() {
+      let ticking = false;
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            handleParallax();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    }
+
+    function handleParallax() {
+      const scrolled = window.pageYOffset;
+
+      // Parallax effect for hero background
+      const gridBackground = document.querySelector('.grid-background');
+      if (gridBackground) {
+        gridBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+    }
+
+    // ========================================
+    // ENHANCED CARD INTERACTIONS
+    // ========================================
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.glass-card');
+
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', function (e) {
+          this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+
+        card.addEventListener('mouseleave', function (e) {
+          this.style.transform = 'translateY(0) scale(1)';
+        });
+
+        // Add subtle tilt effect on mouse move
+        card.addEventListener('mousemove', function (e) {
+          const rect = this.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+
+          const rotateX = (y - centerY) / 20;
+          const rotateY = (centerX - x) / 20;
+
+          this.style.transform = `translateY(-8px) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+        });
+
+        card.addEventListener('mouseleave', function () {
+          this.style.transform = 'translateY(0) perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+        });
+      });
+    });
+  </script>
+
+  <!-- Additional Styles for Animations -->
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 1;
+      }
+
+      80% {
+        transform: translateX(-50%) translateY(20px);
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .grid-background {
+      background-image:
+        linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: gridMove 20s linear infinite;
+    }
+
+    @keyframes gridMove {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      100% {
+        transform: translate(50px, 50px);
+      }
+    }
+  </style>
+</body>
+
+</html>
